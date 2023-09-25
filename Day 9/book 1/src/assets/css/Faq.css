@@ -1,0 +1,61 @@
+/* FAQ.css */
+
+/* FAQ container */
+.faq-container {
+  background-color: #f7f6fb;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 13px 16px 15px 6px rgba(206,207,224,1);
+-moz-box-shadow: 13px 16px 15px 6px rgba(206,207,224,1);
+box-shadow: 13px 16px 15px 6px rgba(206,207,224,1);
+  margin: 20px auto;
+  max-width: 600px;
+  margin-bottom: -20px;
+}
+
+/* FAQ question */
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #051ab9;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* FAQ answer (initially hidden) */
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background-color: #c0d4ea;
+  border: 1px solid #f1eff6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Styles for open FAQ answers */
+.faq-open .faq-answer {
+  display: block;
+}
+
+/* Styles for open FAQ questions */
+.faq-open .faq-question {
+  background-color: #0056b3;
+}
+
+/* FAQ toggle icon */
+.faq-toggle::after {
+  content: "+";
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Styles for open FAQ toggle icon */
+.faq-open .faq-toggle::after {
+  content: "-";
+}

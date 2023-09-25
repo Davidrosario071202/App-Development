@@ -1,0 +1,137 @@
+
+/* UserDashboard.css */
+
+.user-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.user-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details {
+  font-size: 18px;
+}
+
+.user-details p {
+  margin: 3px 0;
+}
+
+.logout-button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d84315;
+}
+
+.user-dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dashboard-section {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.dashboard-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.order-list,
+.book-list,
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order-item,
+.book-item,
+.review-item {
+  flex: 1;
+  min-width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-account-button,
+.edit-payment-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-account-button:hover,
+.edit-payment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add any additional styles as needed */
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .dashboard-section {
+    flex-basis: 100%;
+  }
+}
